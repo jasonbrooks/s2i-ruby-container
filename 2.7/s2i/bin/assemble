@@ -59,9 +59,9 @@ if ! bundle exec rackup -h &>/dev/null; then
   echo "         Add rack to your Gemfile in order to start the web server."
 fi
 
-if [[ "$RAILS_ENV" == "production" || "$RACK_ENV" == "production" ]]; then
-  rake_assets_precompile
-fi
+#if [[ "$RAILS_ENV" == "production" || "$RACK_ENV" == "production" ]]; then
+#  rake_assets_precompile
+#fi
 
 # Fix source directory permissions
 fix-permissions ./
